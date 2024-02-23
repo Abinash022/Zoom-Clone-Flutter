@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'meeting_screen.dart';
+
 class ButtomNavigationTabs extends StatefulWidget {
   const ButtomNavigationTabs({super.key});
 
@@ -11,7 +13,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
   late int selectedIndex = 0;
 
   final List<Widget> pages = [
-    const Text('This is a Meeting Screen'),
+    const MeetingScreen(),
     const Text('This is a TeamChat Screen'),
     const Text('This is a Mail Screen'),
     const Text('This is a Calendar Screen'),
@@ -37,6 +39,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
             icon: Icon(
               Icons.videocam_outlined,
               color: Colors.white,
+              size: 27,
             ),
             label: 'Meetings',
           ),
@@ -44,6 +47,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
             icon: Icon(
               Icons.group,
               color: Colors.white,
+              size: 27,
             ),
             label: 'TeamChat',
           ),
@@ -51,6 +55,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
             icon: Icon(
               Icons.mail_outline_outlined,
               color: Colors.white,
+              size: 27,
             ),
             label: 'Mail',
           ),
@@ -58,6 +63,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
             icon: Icon(
               Icons.calendar_today_outlined,
               color: Colors.white,
+              size: 27,
             ),
             label: 'Calendar',
           ),
@@ -65,6 +71,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
             icon: Icon(
               Icons.more_horiz,
               color: Colors.white,
+              size: 27,
             ),
             label: 'More',
           ),

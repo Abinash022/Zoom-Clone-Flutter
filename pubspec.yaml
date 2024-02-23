@@ -40,6 +40,7 @@ dependencies:
   google_sign_in: ^6.2.1
   cloud_firestore: ^4.15.5
   hooks_riverpod: ^2.4.10
+  jitsi_meet_flutter_sdk: ^0.1.9
 
 dev_dependencies:
   flutter_test:

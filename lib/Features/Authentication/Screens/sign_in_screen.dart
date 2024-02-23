@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zoom_clone/Features/Authentication/Repository/auth_repository_implementation.dart';
 import 'package:zoom_clone/Features/Authentication/Widgets/custom_buttons.dart';
+import 'package:zoom_clone/Features/Meetings/Screens/main_bottom_navigation.dart.dart';
 import 'package:zoom_clone/Features/Meetings/Screens/meeting_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -74,7 +75,7 @@ class _SignInScreenState extends State<SignInScreen> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const MeetingScreen(),
+                    builder: (context) => const ButtomNavigationTabs(),
                   ));
             },
           ),
