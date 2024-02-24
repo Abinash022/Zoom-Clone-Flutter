@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import 'package:zoom_clone/Features/Meetings/Repository/meeting_repository_implementation.dart';
+import 'package:zoom_clone/Features/Meetings/Screens/join_meeting_screen.dart';
 import 'package:zoom_clone/Features/Meetings/Widgets/custom_buttons.dart';
 
 class MeetingScreen extends StatefulWidget {
@@ -60,7 +61,13 @@ class _MeetingScreenState extends State<MeetingScreen> {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return const JoinMeetingScreen();
+                    },
+                  ));
+                },
                 child: const CustomButton(
                   text: 'Join',
                   color: Color.fromRGBO(45, 101, 246, 1),

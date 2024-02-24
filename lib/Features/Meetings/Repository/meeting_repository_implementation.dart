@@ -6,6 +6,7 @@ class MeetingRepositoryImplementation implements MeetingRepository {
   final AuthRepositoryImplementation _authRepositoryImplementation =
       AuthRepositoryImplementation();
   final JitsiMeet jitsiMeet = JitsiMeet();
+
   @override
   void createMeeting(String roomName) async {
     try {
