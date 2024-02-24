@@ -11,6 +11,11 @@ class AuthRepositoryImplementation implements AuthRepository {
 //getter Method for excessing the current user so that we can display the essential info in our meeting Screen or while integrating Jitsi.
   User get user => _firebaseAuth.currentUser!;
 
+  // we will be using this for persisting state later on using some provider.
+  User? getCurrentUser() {
+    return _firebaseAuth.currentUser;
+  }
+
   @override
   Future<void> googleSignIn() async {
     try {

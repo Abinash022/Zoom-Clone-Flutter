@@ -3,7 +3,10 @@ import 'package:zoom_clone/Features/Authentication/Repository/auth_repository_im
 
 class AuthNotifier extends StateNotifier<bool> {
   final AuthRepositoryImplementation _authRepositoryImplementation;
-  AuthNotifier(this._authRepositoryImplementation) : super(false);
+
+  AuthNotifier(
+    this._authRepositoryImplementation,
+  ) : super(false);
 
   Future<void> googleSignIn() async {
     state = false;
