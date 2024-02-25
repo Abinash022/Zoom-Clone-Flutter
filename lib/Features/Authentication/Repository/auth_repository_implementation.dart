@@ -12,9 +12,7 @@ class AuthRepositoryImplementation implements AuthRepository {
   User get user => _firebaseAuth.currentUser!;
 
   // we will be using this for persisting state later on using some provider.
-  User? getCurrentUser() {
-    return _firebaseAuth.currentUser;
-  }
+  Stream<User?> get userState => _firebaseAuth.authStateChanges();
 
   @override
   Future<void> googleSignIn() async {

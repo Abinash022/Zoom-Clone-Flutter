@@ -3,6 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:zoom_clone/Features/Authentication/Riverpod/providers.dart';
 import 'package:zoom_clone/Features/Authentication/Widgets/custom_buttons.dart';
+import 'package:zoom_clone/Features/Meetings/Screens/main_bottom_navigation.dart.dart';
 
 class SignInScreen extends StatefulHookConsumerWidget {
   const SignInScreen({super.key});
@@ -70,8 +71,8 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
               ButtonWidget(
                 text: 'Sign In',
                 color: const Color.fromRGBO(45, 101, 246, 1),
-                onTap: () {
-                  signInState.signIn(emailEditingController.text,
+                onTap: () async {
+                  await signInState.signIn(emailEditingController.text,
                       passwordEditingController.text);
                 },
               ),

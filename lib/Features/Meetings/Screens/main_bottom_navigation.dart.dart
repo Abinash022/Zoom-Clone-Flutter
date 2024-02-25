@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_clone/log_out_sceen.dart';
 
 import 'meeting_screen.dart';
 
@@ -17,7 +18,7 @@ class _ButtomNavigationTabsState extends State<ButtomNavigationTabs> {
     const Text('This is a TeamChat Screen'),
     const Text('This is a Mail Screen'),
     const Text('This is a Calendar Screen'),
-    const Text('This is a More Screen'),
+    const LogoutScreen(),
   ];
 
   @override
