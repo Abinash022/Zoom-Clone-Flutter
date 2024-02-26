@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jitsi_meet_flutter_sdk/jitsi_meet_flutter_sdk.dart';
+
 import 'package:zoom_clone/Features/Authentication/Repository/auth_repository_implementation.dart';
 import 'package:zoom_clone/Features/Meetings/Repository/meeting_repository_implementation.dart';
 

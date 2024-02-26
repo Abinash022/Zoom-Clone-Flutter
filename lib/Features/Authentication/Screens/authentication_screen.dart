@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zoom_clone/Features/Authentication/Screens/sign_in_screen.dart';
 import 'package:zoom_clone/Features/Authentication/Screens/sign_up_screen.dart';
 import 'package:zoom_clone/Features/Authentication/Widgets/custom_buttons.dart';
+import 'package:zoom_clone/Features/Meetings/Screens/join_meeting_screen.dart';
 
 class AuthenticationScreen extends StatelessWidget {
   const AuthenticationScreen({super.key});

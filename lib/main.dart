@@ -4,7 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:zoom_clone/Features/Authentication/Riverpod/providers.dart';
 import 'package:zoom_clone/Features/Authentication/Screens/authentication_screen.dart';
-import 'package:zoom_clone/Features/Authentication/Screens/sign_in_screen.dart';
+
 import 'package:zoom_clone/Features/Meetings/Screens/main_bottom_navigation.dart.dart';
 import 'package:zoom_clone/Constant/error.dart';
 
